@@ -15,13 +15,14 @@ def long_planeteer_calls(array)
   # calls_short = ["wind", "fire", "tree", "axe", "code"]
   # calls_long = ["axe", "earth", "wind", "fire"]
   #include? returns boolean value
-  long_words = array.map do |element|
-    if element.length > 4
-      true
-    else
-      false
-    end
-  end
+  array.any? { |x| array.include?(x.length > 4)}
+end
+#   do |element|
+#    if element.length > 4
+#      true
+#    else
+#      false
+#    end
 
 #  if long_words.include?(true)
 #    true
