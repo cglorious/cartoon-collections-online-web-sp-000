@@ -29,9 +29,11 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.map do |food|
+  new_array = array.map do |food|
     return food if cheese_types.include?(food)
   end
+
+  return nil if new_array.include?(nil)
 end
 
 #return the first element that is cheese .find
