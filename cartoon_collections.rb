@@ -17,8 +17,10 @@ def long_planeteer_calls(array)
       true
     else
       false
+    end
   end
 end
+
 #first iterate through array
 #check for the length of each element
 #if the array has an element that is greater than 4, return true
