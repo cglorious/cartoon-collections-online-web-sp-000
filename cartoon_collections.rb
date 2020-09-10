@@ -12,8 +12,17 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  array.any? { |x| array.include?(x.length > 4)}
+  array.map do |x| 
+    if x.length > 4
+      true
+    else
+      false
+  end
 end
+#first iterate through array
+#check for the length of each element
+#if the array has an element that is greater than 4, return true
+#
 # long_planeteer_calls(calls_short)
 # long_planeteer_calls(calls_long)
 # calls_short = ["wind", "fire", "tree", "axe", "code"]
