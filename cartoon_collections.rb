@@ -35,10 +35,3 @@ def find_the_cheese(array)
   
   return nil if new_array.include?(nil)
 end
-
-#return the first element that is cheese .find
-#return nil if there's no cheese
-# cheddar_cheese = %w[banana cheddar sock]
-# no_cheese = %w[ham cellphone computer]
-# find_the_cheese(cheddar_cheese)
-# find_the_cheese(no_cheese)
