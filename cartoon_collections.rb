@@ -14,6 +14,8 @@ end
 def long_planeteer_calls(array)
   array.any? { |x| array.include?(x.length > 4)}
 end
+# long_planeteer_calls(calls_short)
+# long_planeteer_calls(calls_long)
 # calls_short = ["wind", "fire", "tree", "axe", "code"]
 # calls_long = ["axe", "earth", "wind", "fire"]
 #include? returns boolean value
