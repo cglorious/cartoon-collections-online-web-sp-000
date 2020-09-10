@@ -14,7 +14,8 @@ end
 def long_planeteer_calls(array)
   # calls_short = ["wind", "fire", "tree", "axe", "code"]
   # calls_long = ["axe", "earth", "wind", "fire"]
-  long_words = array.include? do |element|
+  #include? returns boolean value
+  long_words = array.map do |element|
     if element.length > 4
       true
     else
@@ -22,11 +23,11 @@ def long_planeteer_calls(array)
     end
   end
 
-  if long_words.include?(true)
-    true
-  else
-    false
-  end
+#  if long_words.include?(true)
+#    true
+#  else
+#    false
+#  end
 end
 
 def find_the_cheese(array)
