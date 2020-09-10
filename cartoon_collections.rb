@@ -12,11 +12,11 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  # calls_short = ["wind", "fire", "tree", "axe", "code"]
-  # calls_long = ["axe", "earth", "wind", "fire"]
-  #include? returns boolean value
   array.any? { |x| array.include?(x.length > 4)}
 end
+# calls_short = ["wind", "fire", "tree", "axe", "code"]
+# calls_long = ["axe", "earth", "wind", "fire"]
+#include? returns boolean value
 #   do |element|
 #    if element.length > 4
 #      true
@@ -29,7 +29,7 @@ end
 #  else
 #    false
 #  end
-end
+#end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
